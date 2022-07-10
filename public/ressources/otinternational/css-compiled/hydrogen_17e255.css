@@ -1,0 +1,38 @@
+/***********1********************/
+.g-content {
+    /* margin: 0.125rem; */
+    padding: 0.938rem;
+}
+
+.g-flushed .g-content {
+    margin: 0;
+    padding: 0;
+}
+/*********************2********************/
+
+/*******************1***********************/
+
+@media only all and (min-width:48rem) and (max-width:59.99rem) {
+    .g-container {
+        width: 48rem;
+    }
+}
+
+/*******************2***********************/
+
+
+body {
+    color: #666;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+
+

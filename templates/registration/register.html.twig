@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Register
+{% endblock %}
+
+{# {% form_theme registrationForm 'foundation_5_layout.html.twig' %} #}
+
+{# apply multiple form themes but only to the form of this template #}
+{# {% form_theme registrationForm with [
+    'foundation_5_layout.html.twig',
+    'forms/my_custom_theme.html.twig'
+] %} #}
+
+{# ... #}
+
+	{% block body %}
+		<h1>
+	Register
+	</h1>
+	{{ form_start(registrationForm) }}
+	{{ form_row(registrationForm.email) }}
+	{{ form_row(registrationForm.plainPassword) }}
+	{{ form_row(registrationForm.agreeTerms) }}
+		<button type="submit" class="btn"> Register</button>
+	{# {{ form_widget(registrationForm) }} #}
+	{{ form_end(registrationForm) }}
+{% endblock %}

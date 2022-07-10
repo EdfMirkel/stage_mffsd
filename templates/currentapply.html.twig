@@ -1,0 +1,782 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Currt Apply
+{% endblock %}
+
+{% block stylesheets %}
+
+	<!-- master stylesheet -->
+	<link
+	rel="stylesheet" href="{{ asset('ressources/css/style.css') }}">
+	<!-- responsive stylesheet -->
+	<link
+	rel="stylesheet" href="{{ asset('ressources/css/responsive.css') }}">
+
+	<!-- Css otinternational -->
+	<link
+	href="{{ asset('/ressources/otinternational/otinternational.css') }}" rel="stylesheet">
+
+	<!--  Apply css -->
+	<link href="{{ asset('ressources/Apply/grid-responsive.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('ressources/Apply/bootstrap.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('ressources/Apply/master-75a2c0084965cca58fc2b5847dc2e9c7.css') }}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{ asset('ressources/Apply/system.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<!-- header -->
+{% include "header.html.twig" %}
+<!-- /.header -->
+
+	<div class="rt-container">
+<div id="rt-main">
+	<div class="rt-container">
+		<div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 1.2em; padding: 20px; font-weight: bold;">
+			This form is intended to participants that will/wish to participate in projects organised by MFSSD
+																																																																																																																																																																																																																																																																																																																																																																																																																																																													Network and/or it's Partners and Subsidiaries. Please read it carefully and fill in all true answers
+																																																																																																																																																																																																																																																																																																																																																																																																																																																													for the application process.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																													Your application form may be forwarded to a third party organisation (usually the sending
+																																																																																																																																																																																																																																																																																																																																																																																																																																																													organisation) in cases that the sending organisation is responsible for selecting participant and
+																																																																																																																																																																																																																																																																																																																																																																																																																																																													they will decided if you are selected or not in the below project.</div>
+		<div class="rt-grid-9 ">
+
+
+			<div class="rt-block">
+				<div>
+					<div class="component-content">
+
+						<div>
+							<div>
+
+								{% form_theme form 'foundation_5_layout.html.twig' %}
+
+								{# <form
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									action="currentapply" method="post" name="apply" enctype="multipart/form-data" accept-charset="utf-8"> #}
+								{{ form_start(form) }}
+								<div class="bfQuickMode">
+									<div class=" alert alert-error" style="display:none"></div>
+
+									<div class="control-group">
+										<div class="controls form-inline">
+											<label class="control-label" for="">Gender
+												<i class="icon-asterisk"></i>
+											</label>
+											<label style="vertical-align: baseline; " class="radio inline "><input checked="checked" type="radio" name="Gender" value="Female">
+												<span style="margin-left: 20px;">Female</span>
+											</label>
+											<label style="vertical-align: baseline;" class="radio inline "><input type="radio" name="Gender" value="Male">
+												<span style="margin-left: 20px;">Male</span>
+											</label>
+											<label style="vertical-align: baseline;" class="radio inline "><input type="radio" name="Gender" value="Other">
+												<span style="margin-left: 20px;">Other</span>
+											</label>
+										</div>
+									</div>
+
+
+									<div class=" control-group">
+										<div class="controls form-inline">
+											<label class="control-label">
+
+												<span class="hasTooltip" title="Your Name (as stated in any of your travel documents, ID, Passport) in Latin International Characters">
+													First Name (only latin characters | english alphabet)
+												</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											{# {{ form_row(form.nom) }} #}
+
+											{# {{ form_row(form.nom, {'label' : "First Name ", 'attr': {'class':'inputbox' ,'maxlength':'255', 'type':'file'}}) }} #}
+											<input class=" inputbox" maxlength="255" type="text" name="Name" value="" id="ff_elem1">
+
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap427">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel427" for="ff_elem427">
+												<span class="hasTooltip" title="Your Surname (as stated in any of your travel documents, ID, Passport) in Latin International Characters">
+													Surname (only latin characters |englishalphabet)
+												</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											{# {{ form_row(form.prenom) }} #}
+											<input class=" inputbox" maxlength="255" type="text" name="prenom" value="" id="ff_elem427">
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap1819">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel1819" for="ff_elem1819">
+												<span class="hasTooltip" title="Your Email address VALID email is required that you use and manage">
+													Email</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" maxlength="255" type="text" name="ff_nm_PAF_Email[]" value="" id="ff_elem1819">
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap1809">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel1809" for="ff_elem1809">
+												<span class="hasTooltip" title="Your Email address VALID email is required that you use and manage">
+													Retype your Email</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" maxlength="255" type="text" name="ff_nm_PAF_RetypeEmail[]" value="" id="ff_elem1809">
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap77">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel77" for="ff_elem77">Phone Number
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" maxlength="20" type="text" name="ff_nm_PAF_PhoneNumber[]" value="" id="ff_elem77">
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap78">
+										<div class="controls form-inline">
+											<label class="control-label">Date
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					of Birth
+												<i class="icon-asterisk"></i>
+											</label>
+											<div class="input-append">
+												<input type="date" name="" value="">
+											</div>
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap8">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel8" for="ff_elem8">
+												<span class="hasTooltip" title="Your Country of Residence. If your country is NOT in the list, it means that your sending organisation has a different link for you to apply to the specific project. Please refer to your sending organisation.">
+													Country of Residence</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<select data-chosen="no-chzn" class=" chzn-done" name="ff_nm_PAF_CountryResidence[]" id="ff_elem8">
+												<option value="united_kingdom">Morocco</option>
+												<option value="cyprus">
+													Cyprus</option>
+												<option value="greece">Greece</option>
+												<option value="romania">Romania</option>
+												<option value="italy">Italy</option>
+												<option value="hungary">Hungary</option>
+											</select>
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap79">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel79" for="ff_elem79">
+												<span class="hasTooltip" title="Your Country of Residence">
+													Country of Birth</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<select data-chosen="no-chzn" class=" chzn-done" name="ff_nm_PAF_CountryBirth[]" id="ff_elem79">
+												<option value="united_kingdom">United
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Kingdom
+												</option>
+												<option value="afghanistan">Afghanistan
+												</option>
+												<option value="albania">Albania</option>
+												<option value="algeria">Algeria</option>
+												<option value="andorra">Andorra</option>
+												<option value="angola">Angola</option>
+												<option value="antigua_and_barbuda">
+													Antigua
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			and Barbuda</option>
+												<option value="argentina">Argentina
+												</option>
+												<option value="armenia">Armenia</option>
+												<option value="australia">Australia
+												</option>
+												<option value="austria">Austria</option>
+												<option value="azerbaijan">Azerbaijan
+												</option>
+												<option value="bahamas,_the">Bahamas,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			The
+												</option>
+												<option value="bahrain">Bahrain</option>
+												<option value="bangladesh">Bangladesh
+												</option>
+												<option value="barbados">Barbados
+												</option>
+												<option value="belarus">Belarus</option>
+												<option value="belgium">Belgium</option>
+												<option value="belize">Belize</option>
+												<option value="benin">Benin</option>
+												<option value="bhutan">Bhutan</option>
+												<option value="bolivia">Bolivia</option>
+												<option value="bosnia_and_herzegovina">
+													Bosnia and Herzegovina</option>
+												<option value="botswana">Botswana
+												</option>
+												<option value="brazil">Brazil</option>
+												<option value="brunei_darussalam">Brunei
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Darussalam</option>
+												<option value="bulgaria">Bulgaria
+												</option>
+												<option value="burkina_faso">Burkina
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Faso
+												</option>
+												<option value="burma">Burma</option>
+												<option value="burundi">Burundi</option>
+												<option value="cambodia">Cambodia
+												</option>
+												<option value="cameroon">Cameroon
+												</option>
+												<option value="canada">Canada</option>
+												<option value="cape_verde">Cape Verde
+												</option>
+												<option value="central_african_republic">
+													Central African Republic</option>
+												<option value="chad">Chad</option>
+												<option value="chile">Chile</option>
+												<option value="china">China</option>
+												<option value="colombia">Colombia
+												</option>
+												<option value="comoros">Comoros</option>
+												<option value="congo_brazzaville">Congo
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			(Brazzaville)</option>
+												<option value="congo_kinshasa">Congo
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			(Kinshasa)</option>
+												<option value="costa_rica">Costa Rica
+												</option>
+												<option value="cote_d&#39;ivoire">Cote
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			d'Ivoire</option>
+												<option value="croatia">Croatia</option>
+												<option value="cuba">Cuba</option>
+												<option value="cyprus">Cyprus</option>
+												<option value="czech_republic">Czech
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Republic</option>
+												<option value="denmark">Denmark</option>
+												<option value="djibouti">Djibouti
+												</option>
+												<option value="dominica">Dominica
+												</option>
+												<option value="dominican_republic">
+													Dominican
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Republic</option>
+												<option value="Timor-leste">Timor-Leste
+												</option>
+												<option value="ecuador">Ecuador</option>
+												<option value="egypt">Egypt</option>
+												<option value="el_salvador">El Salvador
+												</option>
+												<option value="equatorial_guinea">
+													Equatorial
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Guinea</option>
+												<option value="eritrea">Eritrea</option>
+												<option value="estonia">Estonia</option>
+												<option value="ethiopia">Ethiopia
+												</option>
+												<option value="fiji">Fiji</option>
+												<option value="finland">Finland</option>
+												<option value="france">France</option>
+												<option value="gabon">Gabon</option>
+												<option value="gambia,_the">Gambia, The
+												</option>
+												<option value="georgia">Georgia</option>
+												<option value="germany">Germany</option>
+												<option value="ghana">Ghana</option>
+												<option value="greece">Greece</option>
+												<option value="grenada">Grenada</option>
+												<option value="guatemala">Guatemala
+												</option>
+												<option value="guinea">Guinea</option>
+												<option value="guinea-bissau">
+													Guinea-Bissau
+												</option>
+												<option value="guyana">Guyana</option>
+												<option value="haiti">Haiti</option>
+												<option value="holy_see">Holy See
+												</option>
+												<option value="honduras">Honduras
+												</option>
+												<option value="hong_kong">Hong Kong
+												</option>
+												<option value="hungary">Hungary</option>
+												<option value="iceland">Iceland</option>
+												<option value="india">India</option>
+												<option value="indonesia">Indonesia
+												</option>
+												<option value="iran">Iran</option>
+												<option value="iraq">Iraq</option>
+												<option value="ireland">Ireland</option>
+												<option value="israel">Israel</option>
+												<option value="italy">Italy</option>
+												<option value="jamaica">Jamaica</option>
+												<option value="japan">Japan</option>
+												<option value="jordan">Jordan</option>
+												<option value="kazakhstan">Kazakhstan
+												</option>
+												<option value="kenya">Kenya</option>
+												<option value="kiribati">Kiribati
+												</option>
+												<option value="korea,_north">Korea,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			North
+												</option>
+												<option value="korea,_south">Korea,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			South
+												</option>
+												<option value="kosovo">Kosovo</option>
+												<option value="kuwait">Kuwait</option>
+												<option value="kyrgyzstan">Kyrgyzstan
+												</option>
+												<option value="laos">Laos</option>
+												<option value="latvia">Latvia</option>
+												<option value="lebanon">Lebanon</option>
+												<option value="lesotho">Lesotho</option>
+												<option value="liberia">Liberia</option>
+												<option value="libya">Libya</option>
+												<option value="liechtenstein">
+													Liechtenstein
+												</option>
+												<option value="lithuania">Lithuania
+												</option>
+												<option value="luxembourg">Luxembourg
+												</option>
+												<option value="macau">Macau</option>
+												<option value="macedonia">Macedonia
+												</option>
+												<option value="madagascar">Madagascar
+												</option>
+												<option value="malawi">Malawi</option>
+												<option value="malaysia">Malaysia
+												</option>
+												<option value="maldives">Maldives
+												</option>
+												<option value="mali">Mali</option>
+												<option value="malta">Malta</option>
+												<option value="marshall_islands">
+													Marshall
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Islands</option>
+												<option value="mauritania">Mauritania
+												</option>
+												<option value="mauritius">Mauritius
+												</option>
+												<option value="mexico">Mexico</option>
+												<option value="micronesia">Micronesia
+												</option>
+												<option value="moldova">Moldova</option>
+												<option value="monaco">Monaco</option>
+												<option value="mongolia">Mongolia
+												</option>
+												<option value="montenegro">Montenegro
+												</option>
+												<option selected="selected" value="morocco">Morocco</option>
+												<option value="mozambique">Mozambique
+												</option>
+												<option value="namibia">Namibia</option>
+												<option value="nauru">Nauru</option>
+												<option value="nepal">Nepal</option>
+												<option value="netherlands">Netherlands
+												</option>
+												<option value="netherlands_antilles">
+													Netherlands Antilles</option>
+												<option value="new_zealand">New Zealand
+												</option>
+												<option value="nicaragua">Nicaragua
+												</option>
+												<option value="niger">Niger</option>
+												<option value="nigeria">Nigeria</option>
+												<option value="north_korea">North Korea
+												</option>
+												<option value="norway">Norway</option>
+												<option value="oman">Oman</option>
+												<option value="pakistan">Pakistan
+												</option>
+												<option value="palau">Palau</option>
+												<option value="palestinian_territories">
+													Palestinian Territories</option>
+												<option value="panama">Panama</option>
+												<option value="papua_new_guinea">Papua
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			New
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Guinea</option>
+												<option value="paraguay">Paraguay
+												</option>
+												<option value="peru">Peru</option>
+												<option value="philippines">Philippines
+												</option>
+												<option value="poland">Poland</option>
+												<option value="portugal">Portugal
+												</option>
+												<option value="qatar">Qatar</option>
+												<option value="romania">Romania</option>
+												<option value="russia">Russia</option>
+												<option value="rwanda">Rwanda</option>
+												<option value="saint_kitts_and_nevis">
+													Saint
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Kitts and Nevis</option>
+												<option value="saint_lucia">Saint Lucia
+												</option>
+												<option value="saint_vincent_and_the_grenadines">
+													Saint Vincent and the Grenadines
+												</option>
+												<option value="samoa">Samoa</option>
+												<option value="san_marino">San Marino
+												</option>
+												<option value="sao_tome_and_principe">
+													Sao
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Tome and Principe</option>
+												<option value="saudi_arabia">Saudi
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Arabia
+												</option>
+												<option value="senegal">Senegal</option>
+												<option value="serbia">Serbia</option>
+												<option value="seychelles">Seychelles
+												</option>
+												<option value="sierra_leone">Sierra
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Leone
+												</option>
+												<option value="singapore">Singapore
+												</option>
+												<option value="slovakia">Slovakia
+												</option>
+												<option value="slovenia">Slovenia
+												</option>
+												<option value="solomon_islands">Solomon
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Islands</option>
+												<option value="somalia">Somalia</option>
+												<option value="south_africa">South
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Africa
+												</option>
+												<option value="south_korea">South Korea
+												</option>
+												<option value="spain">Spain</option>
+												<option value="sri_lanka">Sri Lanka
+												</option>
+												<option value="sudan">Sudan</option>
+												<option value="suriname">Suriname
+												</option>
+												<option value="swaziland">Swaziland
+												</option>
+												<option value="sweden">Sweden</option>
+												<option value="switzerland">Switzerland
+												</option>
+												<option value="syria">Syria</option>
+												<option value="taiwan">Taiwan</option>
+												<option value="tajikistan">Tajikistan
+												</option>
+												<option value="tanzania">Tanzania
+												</option>
+												<option value="thailand">Thailand
+												</option>
+												<option value="timor-leste">Timor-Leste
+												</option>
+												<option value="togo">Togo</option>
+												<option value="tonga">Tonga</option>
+												<option value="trinidad_and_tobago">
+													Trinidad
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			and Tobago</option>
+												<option value="tunisia">Tunisia</option>
+												<option value="turkey">Turkey</option>
+												<option value="turkmenistan">
+													Turkmenistan
+												</option>
+												<option value="tuvalu">Tuvalu</option>
+												<option value="uganda">Uganda</option>
+												<option value="ukraine">Ukraine</option>
+												<option value="united_arab_emirates">
+													United
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Arab Emirates</option>
+												<option value="united_states_of_america">
+													United States of America</option>
+												<option value="uruguay">Uruguay</option>
+												<option value="uzbekistan">Uzbekistan
+												</option>
+												<option value="vanuatu">Vanuatu</option>
+												<option value="venezuela">Venezuela
+												</option>
+												<option value="vietnam">Vietnam</option>
+												<option value="yemen">Yemen</option>
+												<option value="zambia">Zambia</option>
+												<option value="zimbabwe">Zimbabwe
+												</option>
+											</select>
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap117">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel117" for="ff_elem117">
+												<span class="hasTooltip" title="Enter your place of birth. City/Town/Village in Latin Characters. No special symbols or other alphabets except english.">
+													Place of Birth (only english
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			characters)</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" maxlength="50" type="text" name="ff_nm_PAF_PlaceOfBirth[]" value="" id="ff_elem117">
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap84">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel84" for="ff_elem84">
+												<span class="hasTooltip" title="All data given will NOT be given to any third party or distributed by any form without your consent.">
+													Please select below what applies to you. These are
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			characteristics for young people with fewer
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			opportunities. (SELECT UP TO 3)</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<div style="display: inline-block; vertical-align: top;">
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381" for="ff_elem1381"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="CulturalDifferences" id="ff_elem1381">
+													Cultural Differences</label>
+												<div style="clear:both;"></div>
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381_1" for="ff_elem1381_1"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="Disability" id="ff_elem1381_1">
+													Disability</label>
+												<div style="clear:both;"></div>
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381_2" for="ff_elem1381_2"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="EconomicObstacles" id="ff_elem1381_2">
+													Economic Obstacles</label>
+												<div style="clear:both;"></div>
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381_3" for="ff_elem1381_3"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="EducationalDifficulties" id="ff_elem1381_3">
+													Educational Difficulties</label>
+												<div style="clear:both;"></div>
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381_4" for="ff_elem1381_4"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="HealthProblems" id="ff_elem1381_4">
+													Health Problems</label>
+												<div style="clear:both;"></div>
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381_5" for="ff_elem1381_5"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="Refugee" id="ff_elem1381_5">
+													Refugee</label>
+												<div style="clear:both;"></div>
+												<label style="display: block;" class="bfbs3-checkbox-inline" id="bfGroupLabel1381_6" for="ff_elem1381_6"><input class="ff_elem" type="checkbox" name="ff_nm_OPAF_FewOpportunites[]" value="SocialObstacles" id="ff_elem1381_6">
+													Social Obstacles</label>
+											</div>
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap82">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel82" for="ff_elem82">Contact Person: (in case
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					of
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					any emergency)
+												<i class="icon-asterisk"></i>
+											</label>
+											<textarea cols="20" rows="5" class=" inputbox" name="#" id="ff_elem82">Name 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					Phone Number 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					Relationship</textarea>
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap1449">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel1449" for="ff_elem1449">
+												Tell us something funny
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					or strange or unique about you (in 10 words):
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" type="text" name="ff_nm_paf_StrangeUnique[]" value="" id="ff_elem1449">
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap1689">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel1689" for="ff_elem1689">
+												How did you find this
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					project?
+												<i class="icon-asterisk"></i>
+											</label>
+											<select data-chosen="no-chzn" class=" chzn-done" name="ff_nm_PAF_Again[]" id="ff_elem1689">
+												<option selected="selected" value="PleaseSelect">Im a
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			selected participant from
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			my sending organisation
+												</option>
+												<option value="FirstTime">Randomly
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			online (Social Media, etc)</option>
+												<option value="Newsletter">From Newsletter</option>
+												<option value="Other">Other</option>
+											</select>
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap1449">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel1449" for="ff_elem1449">
+												Sending Organisation
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					(PIC Number or OID Number)
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" type="text" name="ff_nm_paf_StrangeUnique[]" value="" id="ff_elem1449">
+										</div>
+									</div>
+
+									<div class=" control-group" id="bfElemWrap1689">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel1689" for="ff_elem1689">
+												Project Selection
+												<i class="icon-asterisk"></i>
+											</label>
+											<select data-chosen="no-chzn" class=" chzn-done" name="ff_nm_PAF_Again[]" id="ff_elem1689">
+												<option value="TheFutureofOurWellbeing">The Future of Our
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Wellbeing</option>
+												<option value="EmpoweredCitizenship">Empowered Citizenship
+												</option>
+												<option value="TeamworkisGreenwork">Teamwork is Greenwork
+												</option>
+												<option value="BranchesofHope">Branches of Hope</option>
+												<option value="YoungSTARS3">YoungSTARS 3</option>
+												<option value="TheDecadeofCitizens">The Decade of Citizens
+												</option>
+												<option value="ECOvsEGO">ECO vs EGO</option>
+											</select>
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap81">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel81" for="ff_elem81">Do you have any special
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					needs? (for example: diet, -vegetarian-,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					disability, religion etc)
+												<span class="bfMaxLengthCounter" id="bfMaxLengthCounter81">(500 chars
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			left)</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<textarea cols="20" rows="5" class=" inputbox" onkeyup="bfCheckMaxlength(81, 500, true)" name="ff_nm_PAF_SpecialNeeds[]" id="ff_elem81">No</textarea>
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap83">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel83" for="ff_elem83">
+												<span class="hasTooltip">
+													Motivation,
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Experience, Contribution:
+													<span class="bfMaxLengthCounter" id="bfMaxLengthCounter83">(1000
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	chars
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	left)</span>
+												</span>
+											</label>
+											<textarea cols="20" rows="5" class=" inputbox" onkeyup="bfCheckMaxlength(83, 1000, true)" name="ff_nm_PAF_MotiveExpcontribution[]" id="ff_elem83"></textarea>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<div class="controls form-inline">
+											<label class="control-label" for="">
+												Select Flight Arrangement option. (please see hint
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					for more info)
+												<i class="icon-asterisk"></i>
+											</label>
+											<label style="vertical-align: baseline;" class="radio inline "><input type="radio" name="Arrangement " value="Female">
+												<span style="margin-left: 20px;">Option A</span>
+											</label>
+											<label style="vertical-align: baseline;" class="radio inline "><input type="radio" name="Arrangement " value="Male">
+												<span style="margin-left: 20px;">Option B</span>
+											</label>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<div class="controls form-inline">
+											<label class="control-label" for="">
+												Do you need a VISA entry permit to the Hosting
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					Country?
+												<i class="icon-asterisk"></i>
+											</label>
+											<label style="vertical-align: baseline;" class="radio inline "><input type="radio" name="VISA " value="Female">
+												Yes</label>
+											<label style="vertical-align: baseline;" class="radio inline "><input type="radio" name="VISA " value="Male">
+												No</label>
+										</div>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap80">
+										<div class="controls form-inline">
+											<label class="control-label" id="bfLabel80" for="ff_elem80">
+												<span class="hasTooltip">
+													Passport or ID (travel document with picture)</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											{{ form_row(form.file, {'attr':{'style':"color: blue" ,'class':"form-control-file" ,'id':"exampleFormControlFile1"}}) }}
+											{# <input type="file" name="Passport" id="ff_elem80"> #}
+										</div>
+										<span id="ff_elem80_files"></span>
+									</div>
+
+
+									<div class=" control-group" id="bfElemWrap84">
+										<div class="controls form-inline">
+											<label class="control-label">
+												<span class="hasTooltip">
+													I agree that the information above is true, and I give
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			my consent for the processing of these by the
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Coordinating Organisation.
+												</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<input style="vertical-align: baseline;" type="checkbox" name="ff_nm_PAF_Agree[]" value="checked" id="ff_elem84">
+										</div>
+									</div>
+									<div class=" control-group" id="bfElemWrap485">
+										<div class="controls form-inline">
+											<label class="control-label">I agree to the Terms and Conditions
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					of the
+												<a href="#">General
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			Partner Agreement
+												</a>
+												and the
+												<a href="#">
+													Privacy Policy
+												</a>
+												of our Network.
+												<i class="icon-asterisk"></i>
+											</label>
+											<input style="vertical-align: baseline;" type="checkbox" name="ff_nm_PAF_PartnerAgreement[]" value="checked" id="ff_elem485">
+										</div>
+									</div>
+									<div class=" control-group" id="bfElemWrap485">
+										<div class="controls form-inline">
+											<label class="control-label">
+												I have read the Guidelines of the
+												<a href="#">
+													Covid-19 Risk Management
+												</a>
+												<i class="icon-asterisk"></i>
+											</label>
+											<input style="vertical-align: baseline;" type="checkbox" name="ff_nm_PAF_PartnerAgreement[]" value="checked" id="ff_elem485">
+										</div>
+									</div>
+
+									<div class="form-actions">
+										<button type="submit" name="send" class="bfNextButton btn btn-primary pull-right button" value="">
+											<span>Send</span>
+										</button>
+									</div>
+								</div>
+								{{form_rest(form)}}
+
+
+								{# </form> #}
+							</div>
+							<!-- form end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div></div>
+
+	{% include "footer.html.twig" %}
+
+<!-- main jQuery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- bx slider -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- validate --><script src="js/validate.js"></script>
+<!-- thm custom script -->
+<script src="js/custom.js"></script>
+
+{% endblock %}

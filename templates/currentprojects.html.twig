@@ -1,0 +1,314 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Events
+{% endblock %}
+
+{% block stylesheets %}
+
+<!-- responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- master stylesheet -->
+	<link rel="stylesheet" href="{{ asset('ressources/css/style.css') }}">
+	<!-- responsive stylesheet -->
+	<link rel="stylesheet" href="{{ asset('ressources/css/responsive.css') }}">
+	
+	<!-- Css otinternational -->
+	<link
+	href="{{ asset('/ressources/otinternational/otinternational.css') }}" rel="stylesheet">
+
+	<!--  Current css -->
+	<link href="{{ asset('ressources/Current/hydrogen_22.css') }}" rel="stylesheet">
+	<link href="{{ asset('ressources/Current/bootstrap-gantry.css') }}" rel="stylesheet">
+
+
+
+{% endblock %}
+
+{% block body %}
+
+<!-- header -->
+{% include "header.html.twig" %}
+<!-- /.header -->
+
+	<!-- Container -->
+	<main id="main" style="border: 1px solid #000000;"  >
+		<div class="container">
+			
+			<!-- <div class=" grid">
+
+				<div class="block size-100 full-width nopaddingall nomarginall">
+					<div id="jlnewsticker-9285-particle" class="content particle">
+						<div id="jlnewsticker-9285" class="news-ticker">
+
+
+
+						</div>
+					</div>
+				</div>-->
+			</div> 
+			<div class="grid "  style="margin-top: 2em;">
+
+				<div class="block size-100">
+					<div class="content">
+						<div class="platform-content row-fluid">
+							<div class="span12">
+								<div class="blog">
+									<div class="blog-items clearfix">
+										<div class="row blog-item">
+										</div>
+
+										<!-- Article -->
+										<div class="row blog-item" >
+											<article>
+												<!-- Intro image -->
+												<div class="col-md-3 side"></div>
+												<div class="col-md-6">
+													<section class="article-intro clearfix">
+														<p><img
+																	src="{{ asset('ressources/img/Current-Images/2.jpeg') }}"
+																	alt="TeamworkisGreenwork Banner 001667"></span></p>
+														<p><span style="font-size: 14pt;">Erasmus + : KA105 - Youth
+																Exchange - Programme Countries</span></p>
+														<p><span style="font-size: 14pt;">Place: Cyprus,
+																Protaras</span></p>
+														<p><span style="font-size: 14pt;">Activity Dates: 16/09/2021
+																- 24/09/2021</span></p>
+														<p><span style="font-size: 14pt;">Countries: Bulgaria,
+																Croatia, Cyprus, Germany, Greece, Italy, Portugal,
+																Romania, Slovakia, Spain, United Kingdom, ,</span>
+														</p>
+														<p><span style="font-size: 14pt;">Participants per country
+																(incl. leaders): 5</span></p>
+													</section>
+													<section class="readmore">
+														<a class="btn btn-default" href="readmore">
+															<span>
+																Read more: Teamwork is Greenwork </span>
+														</a>
+													</section>
+												</div>
+												<div class="col-md-3 side">
+													<!-- <div class="well">
+														/*ADS*/
+													</div> -->
+												</div>
+											</article>
+										</div>
+										<!--// Article -->
+
+										<!-- Article -->
+										<div class="row blog-item">
+											<article>
+												<!-- Intro image -->
+												<div class="col-md-3">
+												</div>
+												<div class="col-md-6">
+													<section class="article-intro clearfix">
+														<p><img src="{{ asset('ressources/img/Current-Images/3.jpeg') }}"
+																alt="BranchesOFHope 079384"></p>
+														<p><span style="font-size: 14pt;">Erasmus +: KA105 - Youth
+																Exchange - Programme Countries</span></p>
+														<p><span style="font-size: 14pt;">Place: Greece, Kokkino
+																Nero</span></p>
+														<p><span style="font-size: 14pt;">Activity Dates: 05/10/2021
+																- 13/10/2021</span></p>
+														<p><span style="font-size: 14pt;">Countries: Cyprus, Greece,
+																Italy, Lithuania, Romania, Romania, Turkey, United
+																Kingdom, ,</span></p>
+														<p><span style="font-size: 14pt;">Participants per country
+																(incl. leaders): 5</span></p>
+													</section>
+													<section class="readmore">
+														<a class="btn btn-default" href="readmore">
+															<span>
+																Read more: Branches Of Hope </span>
+														</a>
+													</section>
+												</div>
+												<div class="col-md-3 side">
+												</div>
+											</article>
+										</div>
+										<!-- //Article -->
+
+										<!-- Article -->
+										<div class="row blog-item">
+											<article>
+												<!-- Intro image -->
+												<div class="col-md-3 side"></div>
+												<div class="col-md-6">
+													<section class="article-intro clearfix">
+														<p><img src="{{ asset('ressources/img/Current-Images/1.jpeg') }}"
+																alt="EmpoweredCitizenship 077507"></p>
+														<p><span style="font-size: 14pt;">Erasmus + : KA105 - Youth
+																Exchange - Programme Countries</span></p>
+														<p><span style="font-size: 14pt;">Place: Cyprus,
+																Protaras</span></p>
+														<p><span style="font-size: 14pt;">Activity Dates: 02/09/2021
+																- 10/09/2021</span></p>
+														<p><span style="font-size: 14pt;">Countries: Bulgaria,
+																Croatia, Cyprus, Germany, Greece, Hungary, Italy,
+																Lithuania, Poland, Portugal, Romania, Slovakia,
+																Turkey, United Kingdom, ,</span></p>
+														<p><span style="font-size: 14pt;">Participants per country
+																(incl. leaders): 5</span></p>
+														<p> </p>
+													</section>
+													<section class="readmore">
+														<a class="btn btn-default" href="readmore">
+															<span>
+																Read more: Empowered Citizenship </span>
+														</a>
+													</section>
+												</div>
+												<div class="col-md-3 side"></div>
+											</article>
+										</div>
+										<!-- //Article -->
+
+										<!-- Article -->
+										<div class="row blog-item">
+											<article>
+												<!-- Intro image -->
+												<div class="col-md-3 side"></div>
+												<div class="col-md-6">
+													<section class="article-intro clearfix">
+														<p><img src="{{ asset('ressources/img/Current-Images/2.jpeg') }}"
+																alt="YoungStars3 Banner">
+														</p>
+														<p><span style="font-size: 14pt;">Erasmus + : KA105 - Youth
+																Exchange - Programme Countries</span></p>
+														<p><span style="font-size: 14pt;">Place: Greece, Kokkino
+																Nero</span></p>
+														<p><span style="font-size: 14pt;">Activity Dates: 14/10/2021
+																- 22/10/2021</span></p>
+														<p><span style="font-size: 14pt;">Countries: Bulgaria,
+																Cyprus, Greece, Italy, Poland, Romania, Turkey,
+																United Kingdom, ,</span></p>
+														<p><span style="font-size: 14pt;">Participants per country
+																(incl. leaders): 5</span></p>
+														<p> </p>
+													</section>
+													<section class="readmore">
+														<a class="btn btn-default" href="readmore">
+															<span>
+																Read more: YoungSTARS 3 </span>
+														</a>
+														<!-- <a class="thm-btn" href="CurrentApply.html"
+														style=" text-align: center; display: block; margin: 3em 0em 5em 0em ; font-size: 1,4em; width: 50%;">Applay</a> -->
+													</section>
+												</div><div class="col-md-3 side"></div>
+											</article>
+
+										</div>
+										<!-- //Article -->
+
+										<!-- Article -->
+										<div class="row blog-item">
+											<article>
+												<!-- Intro image -->
+												<div class="col-md-3 side"></div>
+												<div class="col-md-6">
+													<section class="article-intro clearfix">
+														<p><img src="{{ asset('ressources/img/Current-Images/3.jpeg') }}"
+																alt="TheFutureofOurWellbeing077982"></p>
+														<p><span style="font-family: verdana, geneva; font-size: 14pt;">Erasmus
+																+ : KA105 - Youth Exchange - Programme
+																Countries</span></p>
+														<p><span style="font-family: verdana, geneva; font-size: 14pt;">Place:
+																Romania</span></p>
+														<p><span style="font-family: verdana, geneva; font-size: 14pt;">Activity
+																Dates: 04/11/2021 - 12/11/2021</span></p>
+														<p><span style="font-family: verdana, geneva; font-size: 14pt;">Countries:
+																Bulgaria, Croatia, Cyprus, Greece, Italy, Lithuania,
+																Poland, Romania, Turkey, United Kingdom, ,</span>
+														</p>
+														<p><span style="font-family: verdana, geneva; font-size: 14pt;">Participants
+																per country (incl. leaders): 5</span></p>
+													</section>
+													<section class="readmore">
+														<a class="btn btn-default" href="readmore">
+															<span>
+																Read more: The Future of Our Wellbeing </span>
+														</a>
+														
+														<!-- <a class="thm-btn" href="CurrentApply.html"
+												style=" text-align: center; display: block; margin: 3em 0em 5em 0em ; font-size: 1,4em; width: 50%;">Applay</a> -->
+										
+													</section>
+												</div><div class="col-md-3 side"></div>
+												
+											</article>
+
+										</div>
+										<!-- //Article -->
+
+										<!-- Article -->
+										<div class="row blog-item">
+											<article>
+												<!-- Intro image -->
+												<div class="col-md-3 side"></div>
+												<div class="col-md-6">
+													<section class="article-intro clearfix">
+														<p><img src="{{ asset('ressources/img/Current-Images/1.jpeg') }}"
+																alt="TheDecadeOfCitizens Banner"></p>
+														<p><span style="font-size: 14pt;">Erasmus + : KA105 - Youth
+																Exchange - Partner Countries</span></p>
+														<p><span style="font-size: 14pt;">Place: Cyprus,
+																Protaras</span></p>
+														<p><span style="font-size: 14pt;">Activity Dates: 18/11/2021
+																- 26/11/2021</span></p>
+														<p><span style="font-size: 14pt;">Countries: Armenia,
+																Azerbaijan, Bulgaria, Cyprus, Georgia, Greece,
+																Lithuania, Slovakia, Turkey, United Kingdom,
+																,</span></p>
+														<p><span style="font-size: 14pt;">Participants per country
+																(incl. leaders): 5</span></p>
+													</section>
+													<section class="readmore">
+														<a class="btn btn-default" href="readmore">
+															<span>
+																Read more: The Decade of Citizens </span>
+														</a>
+													</section>
+												</div><div class="col-md-3 side"></div>
+											</article>
+										</div>
+										<!-- //Article -->
+										<div class="col-md-3 side"></div>										
+										<div class="col-md-6">
+											<section class="article-intro clearfix"
+												style="border-top: #000000 solid 1px; padding: 5em; text-align: center;">
+											</section>
+											
+											<a class="thm-btn" href="#"
+												style=" text-align: center; display: block; margin-bottom: 3em; background-color: #cacaca;  font-size: 1,4em;">Covid-19</a>
+										</div><div class="col-md-3 side"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+	<!-- //Container -->
+
+		{% include "footer.html.twig" %}
+
+
+	<!-- main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- bx slider -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- validate -->
+	<script src="js/validate.js"></script>
+	<!-- thm custom script -->
+	<script src="js/custom.js"></script>
+
+{% endblock %}

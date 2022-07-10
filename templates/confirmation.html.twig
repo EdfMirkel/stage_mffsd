@@ -1,0 +1,79 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Confirmation
+{% endblock %}
+
+{% block stylesheets %}
+
+	<!-- master stylesheet -->
+	<link
+	rel="stylesheet" href="{{ asset('ressources/css/style.css') }}">
+	<!-- responsive stylesheet -->
+	<link
+	rel="stylesheet" href="{{ asset('ressources/css/responsive.css') }}">
+
+	<!--  Apply css -->
+	<link href="{{ asset('ressources/Apply/grid-responsive.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('ressources/Apply/bootstrap.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('ressources/Apply/master-75a2c0084965cca58fc2b5847dc2e9c7.css') }}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{ asset('ressources/Apply/system.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+	<!-- /.mainmenu-area -->
+	<div class="rt-container">
+		<div id="rt-main">
+			<div class="rt-container">
+				<div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 1.2em; padding: 20px; font-weight: bold;">
+					Chek the Your information please and send
+				</div>
+				<div class="rt-grid-9 ">
+
+
+					<div class="rt-block">
+						<div>
+							<div class="component-content">
+								<div>
+									<div>
+										<table>
+											<tr>
+												<td>
+													{{nom}}
+												</td>
+											</tr>
+											<tr>
+												<td>
+													{{prenom}}
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<img src="../uploads{{ asset(img) }}"/>
+												</td>
+											</tr>
+										</table>
+
+										{% form_theme form 'foundation_5_layout.html.twig' %}
+										<form method="post" action="confirmation" name="validate" enctype="multipart/form-data" accept-charset="utf-8" class="bfQuickMode">
+											<div class="form-actions">
+												<button type="submit" name="send" class="bfNextButton btn btn-primary pull-right button" value="">
+													<span>Validate</span>
+												</button>
+											</div>
+
+										</form>
+										<!-- form end -->
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endblock %}

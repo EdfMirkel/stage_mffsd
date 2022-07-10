@@ -1,0 +1,103 @@
+.g-content {
+    margin: 0.625rem;
+    padding: 0.938rem;
+    /* text-align: center; */
+}
+
+.readmore{
+   margin-bottom: 40px; 
+}
+body {
+    color: #666;
+    /* background: #fff; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "roboto", sans-serif;
+    font-weight: 400
+}
+
+.g-container {
+    width: 130rem
+}
+
+@media only all and (min-width: 60rem) and (max-width:79.99rem) {
+    .g-container {
+        width:60rem
+    }
+}
+
+@media only all and (min-width: 48rem) and (max-width:59.99rem) {
+    .g-container {
+        width:48rem
+    }
+}
+
+@media only all and (min-width: 30.01rem) and (max-width:47.99rem) {
+    .g-container {
+        width:30rem
+    }
+}
+
+@media only all and (max-width: 30rem) {
+    .g-container {
+        width:100%
+    }
+}
+
+.g-container.g-flushed {
+    width: 100%
+}
+
+@media only all and (max-width: 47.99rem) {
+    .g-block {
+        -webkit-flex-grow:0;
+        -moz-flex-grow: 0;
+        flex-grow: 0;
+        -ms-flex-positive: 0;
+        -webkit-flex-basis: 100%;
+        -moz-flex-basis: 100%;
+        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%
+    }
+}
+
+@media only all and (max-width: 47.99rem) {
+    body [class*="size-"] {
+        -webkit-flex-grow:0;
+        -moz-flex-grow: 0;
+        flex-grow: 0;
+        -ms-flex-positive: 0;
+        -webkit-flex-basis: 100%;
+        -moz-flex-basis: 100%;
+        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        max-width: 100%
+    }
+}
+
+@media only all and (max-width: 47.99rem) {
+    @supports not (flex-wrap: wrap) {
+        .g-grid {
+            display:block;
+            -webkit-box-lines: inherit;
+            -moz-box-lines: inherit;
+            box-lines: inherit;
+            -webkit-flex-wrap: inherit;
+            -moz-flex-wrap: inherit;
+            -ms-flex-wrap: inherit;
+            flex-wrap: inherit
+        }
+
+        .g-block {
+            display: block;
+            -webkit-box-flex: inherit;
+            -moz-box-flex: inherit;
+            box-flex: inherit;
+            -webkit-flex: inherit;
+            -moz-flex: inherit;
+            -ms-flex: inherit;
+            flex: inherit
+        }
+    }
+}
+

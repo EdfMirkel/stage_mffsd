@@ -1,0 +1,410 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Edite
+{% endblock %}
+
+{% block stylesheets %}
+
+	<!-- master stylesheet -->
+	<link
+	rel="stylesheet" href="{{ asset('ressources/css/style.css') }}">
+	<!-- responsive stylesheet -->
+	<link
+	rel="stylesheet" href="{{ asset('ressources/css/responsive.css') }}">
+
+	<!--  Apply css -->
+	<link href="{{ asset('ressources/Apply/grid-responsive.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('ressources/Apply/bootstrap.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ asset('ressources/Apply/master-75a2c0084965cca58fc2b5847dc2e9c7.css') }}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{ asset('ressources/Apply/system.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+	<section class="top-bar">
+		<div class="container">
+			<div class="social-icons pull-right">
+				<ul>
+					<li><a href="https://www.facebook.com/MFFSDMOROCCO"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="https://www.instagram.com/mffsdmorocco/"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<!-- /.social-icons -->
+		</div>
+	</section>
+	<!-- /.top-bar -->
+
+	<!-- mainmenu-area -->
+	<nav class="mainmenu-area stricky">
+		<div class="container">
+			<div class="navigation pull-left">
+				<div class="nav-header">
+					<ul>
+						<li class="dropdown">
+							<a href="index.html">Home</a>
+							<ul class="submenu">
+								<li></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="about.html">Mobilities</a>
+							<ul class="submenu">
+								<li class="dropdown2">
+									<a href="">Project</a>
+									<ul class="submenu-2">
+										<li>
+											<a href="current.html">Current</a>
+										</li>
+										<li>
+											<a href="">Completed</a>
+										</li>
+										<li></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">Voluntary Projects</a>
+									<ul class="submenu-2">
+										<li>
+											<a href="">Active Projects</a>
+										</li>
+										<li>
+											<a href="">Completed Projects</a>
+										</li>
+										<li>
+											<a href="VoluntaryApply.html">Apply</a>
+										</li>
+										<li></li>
+									</ul>
+								</li>
+								<li></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="programs.html">Network</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">become a partner Organisation</a>
+								</li>
+								<li>
+									<a href="">Have a Project Proposal for us?</a>
+								</li>
+								<li>
+									<a href="">Subsidaires</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="events-list.html">Areas of Interest</a>
+							<ul class="submenu">
+								<li class="dropdown">
+									<a href="">Youth</a>
+									<ul class="submenu">
+										<li>
+											<a href="">Entreprenariat</a>
+										</li>
+										<li></li>
+										<li></li>
+									</ul>
+								</li>
+								<li></li>
+								<li></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#">DONATE</a>
+							<ul class="submenu">
+								<li></li>
+								<li></li>
+							</ul>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="/admin">Participants</a>
+						</li>
+						<li>
+							<a href="edite.html">Edit Content</a>
+						</li>
+						<li>
+							<a href="/logout">
+								<u>logout</u>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</div>
+			<div class="nav-footer">
+				<button>
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- /.mainmenu-area -->
+	<div class="rt-container">
+
+		<div id="rt-main">
+			<div class="rt-container">
+
+
+				<div class="rt-grid-9 ">
+
+
+					<div class="rt-block">
+
+						<div>
+
+							<div
+								class="component-content">
+
+
+								<!-- <div> -->
+								<div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 3.2em; padding: 20px; font-weight: bold; margin: 2em 0em 1em 0em ; ">
+									Slides
+								</div>
+								<!-- <img src="/img/Current-Images/1.jpeg" class="img-fluid" alt="Responsive image"> -->
+
+								<form action="#" method="post" name="Slider" enctype="multipart/form-data" accept-charset="utf-8" class="bfQuickMode">
+
+									<div class=" control-group">
+										<div class="controls form-inline">
+											<label class="control-label">
+												<span>
+													Title 1
+												</span>
+											</label>
+											<input class=" inputbox" type="text">
+											<label class="control-label">
+												<span>
+													Slide
+												</span>
+											</label>
+											<input class=" inputbox" maxlength="255" type="file" name="" value="" id="ff_elem1">
+										</div>
+										<div class="form-actions">
+											<button type="button" class="bfNextButton btn btn-primary pull-right button" value="Next">
+												<span>Save</span>
+											</button>
+										</div>
+									</div>
+								</form>
+
+
+								<div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 3.2em; padding: 20px; font-weight: bold; margin: 2em 0em 1em 0em ; ">
+									Photos
+								</div>
+								<form action="#" method="post" name="Slider" enctype="multipart/form-data" accept-charset="utf-8" class="bfQuickMode">
+									<div class=" control-group">
+										<div class="controls form-inline">
+											<label class="control-label">
+												<span>
+													Add Photo
+												</span>
+											</label>
+											<input class=" inputbox" maxlength="255" type="file" name="" value="" id="ff_elem1">
+										</div>
+										<div class="form-actions">
+											<button type="button" class="bfNextButton btn btn-primary pull-right button" value="Next">
+												<span>Save</span>
+											</button>
+										</div>
+									</div>
+								</form>
+
+								<div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 3.2em; padding: 20px; font-weight: bold; margin: 2em 0em 1em 0em ; ">
+									events
+								</div>
+								<form action="#" method="post" name="Slider" enctype="multipart/form-data" accept-charset="utf-8" class="bfQuickMode">
+
+									<div class=" control-group">
+										<div class="controls form-inline">
+											<label class="control-label">
+												<span>
+													Event Image
+												</span>
+											</label>
+											<input class=" inputbox" maxlength="255" type="file" name="" value="" id="ff_elem1">
+										</div>
+										<div class="controls form-inline">
+											<label class="control-label">
+												<span>
+													Title
+												</span>
+											</label>
+											<input class=" inputbox" maxlength="255" type="text" name="" value="" id="ff_elem1">
+										</div>
+										<div class="form-actions">
+											<button type="button" class="bfNextButton btn btn-primary pull-right button" value="Next">
+												<span>Save</span>
+											</button>
+										</div>
+									</div>
+								</form>
+								<div>
+
+									<div class=" control-group">
+										<div class="controls form-inline">
+											<label class="control-label">
+												<span class="hasTooltip">
+													ADD Photo
+												</span>
+												<i class="icon-asterisk"></i>
+											</label>
+											<input class=" inputbox" maxlength="255" type="file" name="" value="" id="ff_elem1">
+										</div>
+										<div class="form-actions">
+											<button type="button" class="bfNextButton btn btn-primary pull-right button" value="Next">
+												<span>Save</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="form-actions">
+										<button type="button" class="bfNextButton btn btn-primary pull-right button" value="Next">
+											<span>Send</span>
+										</button>
+									</div>
+								</div>
+							</form>
+							<!-- </div> -->
+							<!-- form end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<footer class="footer sec-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-widget about-widget">
+						<a href="#">
+							<img src="img/resources/footer-logo.png" alt="Awesome Image"/>
+						</a>
+						<p>Feel free to get in touch with us to learn more about our organisation.</p>
+						<ul class="contact">
+							<li>
+								<i class="fa fa-map-marker"></i>
+								<span>Rabat, Morocco</li>
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>
+								<span>+212 667 877 729</span>
+							</li>
+							<li>
+								<i class="fa fa-envelope-o"></i>
+								<span>mfd.morocco@gmail.com</span>
+							</li>
+						</ul>
+						<ul class="social">
+							<li>
+								<a href="https://www.facebook.com/MFFSDMOROCCO">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/mffsdmorocco/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<div class="footer-widget quick-links">
+						<h3 class="title">Pages</h3>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="programs.html">Voluntary Apply</a></li>
+							<li><a href="events-list.html">Events</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 latest-post col-sm-6">
+					<div class="footer-widget latest-post">
+						<h3 class="title">Latest News</h3>
+						<ul>
+							<li>
+								<span class="border"></span>
+								<div class="content">
+									<a href="covi19-iwillstepup.html">#iwillstepup Challenge to support youth ideas
+																																																																																																																																																																																																																																																																																																																		that
+																																																																																																																																																																																																																																																																																																																		address covid19</a>
+									<a href="covi19-iwillstepup.html"></a>
+									<span>May 13, 2020</span>
+								</div>
+							</li>
+							<li>
+								<span class="border"></span>
+								<div class="content">
+									<a href="kudakwashe.html">Fundraiser for Kudakwashe Children's Home</a>
+									<a href="kudakwashe.html"></a>
+									<span>May 1, 2020</span>
+								</div>
+							</li>
+							<li>
+								<span class="border"></span>
+								<div class="content">
+									<a href="lockdownlearning.html">Learning during lockdown through WhatsApp
+																																																																																																																																																																																																																																																																																																																		Mentorship
+																																																																																																																																																																																																																																																																																																																		Classes</a>
+									<a href="lockdownlearning.html"></a>
+									<span>April 9, 2020</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-widget contact-widget">
+						<h3 class="title">Contact Form</h3>
+						<form action="http://www.igniteyouth.co.zw/inc/sendemail.php" class="contact-form" id="footer-cf">
+							<input type="text" name="name" placeholder="Full Name">
+							<input type="text" name="email" placeholder="Email Address">
+							<textarea name="message" placeholder="Your Message"></textarea>
+							<button type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="footer-bottom">
+		<div class="container text-center">
+			<p>2021 Copyright:
+				<a href="#">MFSSD YOUTH Organisation</a>
+			</p>
+		</div>
+	</section>
+	<!-- main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- bx slider -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- validate -->
+	<script src="js/validate.js"></script>
+	<!-- thm custom script -->
+	<script src="js/custom.js"></script>
+{% endblock %}
