@@ -3,6 +3,7 @@ Développement stellaire avec Symfony 5
 
 ## Installer
 Si vous venez de télécharger le code, félicitations !!
+
 Pour le faire fonctionner, suivez ces étapes :
 
 1) Créer votre base de données :
