@@ -23,132 +23,15 @@
 
 {% block body %}
 
-	<section class="top-bar">
-		<div class="container">
-			<div class="social-icons pull-right">
-				<ul>
-					<li><a href="https://www.facebook.com/MFFSDMOROCCO"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-					<li><a href="https://www.instagram.com/mffsdmorocco/"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-			</div>
-			<!-- /.social-icons -->
-		</div>
-	</section>
+	<!-- /.top-bar -->
+    {% include "nav.html.twig" %}
 	<!-- /.top-bar -->
 
-	<!-- mainmenu-area -->
-	<nav class="mainmenu-area stricky">
-		<div class="container">
-			<div class="navigation pull-left">
-				<div class="nav-header">
-					<ul>
-						<li class="dropdown">
-							<a href="index.html">Home</a>
-							<ul class="submenu">
-								<li></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="about.html">Mobilities</a>
-							<ul class="submenu">
-								<li class="dropdown2">
-									<a href="">Project</a>
-									<ul class="submenu-2">
-										<li>
-											<a href="current.html">Current</a>
-										</li>
-										<li>
-											<a href="">Completed</a>
-										</li>
-										<li></li>
-									</ul>
-								</li>
-								<li>
-									<a href="">Voluntary Projects</a>
-									<ul class="submenu-2">
-										<li>
-											<a href="">Active Projects</a>
-										</li>
-										<li>
-											<a href="">Completed Projects</a>
-										</li>
-										<li>
-											<a href="VoluntaryApply.html">Apply</a>
-										</li>
-										<li></li>
-									</ul>
-								</li>
-								<li></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="programs.html">Network</a>
-							<ul class="submenu">
-								<li>
-									<a href="#">become a partner Organisation</a>
-								</li>
-								<li>
-									<a href="">Have a Project Proposal for us?</a>
-								</li>
-								<li>
-									<a href="">Subsidaires</a>
-								</li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="events-list.html">Areas of Interest</a>
-							<ul class="submenu">
-								<li class="dropdown">
-									<a href="">Youth</a>
-									<ul class="submenu">
-										<li>
-											<a href="">Entreprenariat</a>
-										</li>
-										<li></li>
-										<li></li>
-									</ul>
-								</li>
-								<li></li>
-								<li></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#">DONATE</a>
-							<ul class="submenu">
-								<li></li>
-								<li></li>
-							</ul>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-						<li>
-							<a href="/admin">Participants</a>
-						</li>
-						<li>
-							<a href="edite.html">Edit Content</a>
-						</li>
-						<li>
-							<a href="/logout">
-								<u>logout</u>
-							</a>
-						</li>
-					</ul>
-				</li>
-			</div>
-			<div class="nav-footer">
-				<button>
-					<i class="fa fa-bars"></i>
-				</button>
-			</div>
-		</div>
-	</nav>
+<!-- mainmenu-area -->
+{% include "menu_admin.html.twig" %}
+<!-- /.mainmenu-area -->
 
 
-	<!-- /.mainmenu-area -->
 	<div class="rt-container">
 
 		<div id="rt-main">
@@ -284,121 +167,10 @@
 		<div class="clear"></div>
 	</div>
 
-	<footer class="footer sec-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6">
-					<div class="footer-widget about-widget">
-						<a href="#">
-							<img src="img/resources/footer-logo.png" alt="Awesome Image"/>
-						</a>
-						<p>Feel free to get in touch with us to learn more about our organisation.</p>
-						<ul class="contact">
-							<li>
-								<i class="fa fa-map-marker"></i>
-								<span>Rabat, Morocco</li>
-							</li>
-							<li>
-								<i class="fa fa-phone"></i>
-								<span>+212 667 877 729</span>
-							</li>
-							<li>
-								<i class="fa fa-envelope-o"></i>
-								<span>mfd.morocco@gmail.com</span>
-							</li>
-						</ul>
-						<ul class="social">
-							<li>
-								<a href="https://www.facebook.com/MFFSDMOROCCO">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/mffsdmorocco/">
-									<i class="fa fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-youtube"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-2 col-sm-6">
-					<div class="footer-widget quick-links">
-						<h3 class="title">Pages</h3>
-						<ul>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="programs.html">Voluntary Apply</a></li>
-							<li><a href="events-list.html">Events</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 latest-post col-sm-6">
-					<div class="footer-widget latest-post">
-						<h3 class="title">Latest News</h3>
-						<ul>
-							<li>
-								<span class="border"></span>
-								<div class="content">
-									<a href="covi19-iwillstepup.html">#iwillstepup Challenge to support youth ideas
-																																																																																																																																																																																																																																																																																																																		that
-																																																																																																																																																																																																																																																																																																																		address covid19</a>
-									<a href="covi19-iwillstepup.html"></a>
-									<span>May 13, 2020</span>
-								</div>
-							</li>
-							<li>
-								<span class="border"></span>
-								<div class="content">
-									<a href="kudakwashe.html">Fundraiser for Kudakwashe Children's Home</a>
-									<a href="kudakwashe.html"></a>
-									<span>May 1, 2020</span>
-								</div>
-							</li>
-							<li>
-								<span class="border"></span>
-								<div class="content">
-									<a href="lockdownlearning.html">Learning during lockdown through WhatsApp
-																																																																																																																																																																																																																																																																																																																		Mentorship
-																																																																																																																																																																																																																																																																																																																		Classes</a>
-									<a href="lockdownlearning.html"></a>
-									<span>April 9, 2020</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="footer-widget contact-widget">
-						<h3 class="title">Contact Form</h3>
-						<form action="http://www.igniteyouth.co.zw/inc/sendemail.php" class="contact-form" id="footer-cf">
-							<input type="text" name="name" placeholder="Full Name">
-							<input type="text" name="email" placeholder="Email Address">
-							<textarea name="message" placeholder="Your Message"></textarea>
-							<button type="submit">Send</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<section class="footer-bottom">
-		<div class="container text-center">
-			<p>2021 Copyright:
-				<a href="#">MFSSD YOUTH Organisation</a>
-			</p>
-		</div>
-	</section>
+<!-- Footer -->
+		{% include "footer.html.twig" %}
+<!-- /Footer -->
+
 	<!-- main jQuery -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<!-- bx slider -->

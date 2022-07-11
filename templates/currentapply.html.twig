@@ -36,12 +36,11 @@
 	<div class="rt-container">
 		<div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 1.2em; padding: 20px; font-weight: bold;">
 			This form is intended to participants that will/wish to participate in projects organised by MFSSD
-																																																																																																																																																																																																																																																																																																																																																																																																																																																													Network and/or it's Partners and Subsidiaries. Please read it carefully and fill in all true answers
-																																																																																																																																																																																																																																																																																																																																																																																																																																																													for the application process.
-																																																																																																																																																																																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																																																																																																																																																																																													Your application form may be forwarded to a third party organisation (usually the sending
-																																																																																																																																																																																																																																																																																																																																																																																																																																																													organisation) in cases that the sending organisation is responsible for selecting participant and
-																																																																																																																																																																																																																																																																																																																																																																																																																																																													they will decided if you are selected or not in the below project.</div>
+			Network and/or it's Partners and Subsidiaries. Please read it carefully and fill in all true answers
+			for the application process
+			Your application form may be forwarded to a third party organisation (usually the sending
+			organisation) in cases that the sending organisation is responsible for selecting participant and
+			they will decided if you are selected or not in the below project.</div>
 		<div class="rt-grid-9 ">
 
 
@@ -53,8 +52,6 @@
 							<div>
 
 								{% form_theme form 'foundation_5_layout.html.twig' %}
-
-								{# <form
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									action="currentapply" method="post" name="apply" enctype="multipart/form-data" accept-charset="utf-8"> #}
 								{{ form_start(form) }}
 								<div class="bfQuickMode">
@@ -87,9 +84,6 @@
 												</span>
 												<i class="icon-asterisk"></i>
 											</label>
-											{# {{ form_row(form.nom) }} #}
-
-											{# {{ form_row(form.nom, {'label' : "First Name ", 'attr': {'class':'inputbox' ,'maxlength':'255', 'type':'file'}}) }} #}
 											<input class=" inputbox" maxlength="255" type="text" name="Name" value="" id="ff_elem1">
 
 										</div>
@@ -104,7 +98,6 @@
 												</span>
 												<i class="icon-asterisk"></i>
 											</label>
-											{# {{ form_row(form.prenom) }} #}
 											<input class=" inputbox" maxlength="255" type="text" name="prenom" value="" id="ff_elem427">
 										</div>
 									</div>
@@ -699,7 +692,6 @@
 												<i class="icon-asterisk"></i>
 											</label>
 											{{ form_row(form.file, {'attr':{'style':"color: blue" ,'class':"form-control-file" ,'id':"exampleFormControlFile1"}}) }}
-											{# <input type="file" name="Passport" id="ff_elem80"> #}
 										</div>
 										<span id="ff_elem80_files"></span>
 									</div>
@@ -755,9 +747,6 @@
 									</div>
 								</div>
 								{{form_rest(form)}}
-
-
-								{# </form> #}
 							</div>
 							<!-- form end -->
 						</div>

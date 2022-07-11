@@ -2,25 +2,18 @@
 
 namespace App\Entity;
 
-use App\Repository\CurrentapplyRepository;
+use App\Repository\VoluntaryapplyRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=CurrentapplyRepository::class)
+ * @ORM\Entity(repositoryClass=VoluntaryapplyRepository::class)
  */
-class Currentapply
+class Voluntaryapply
 {
-    // /**
-    //  * @ORM\Id
-    //  * @ORM\GeneratedValue
-    //  * @ORM\Column(type="integer")
-    //  */
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
      */
     private $id;
 
